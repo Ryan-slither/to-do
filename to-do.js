@@ -56,3 +56,9 @@ var onRemove = () => {
 }
 
 customElements.define("task-label", task);
+
+document.addEventListener("keydown", (evnt) => {
+    if (evnt.key == "Enter") {
+        onAdd();
+    }
+});
